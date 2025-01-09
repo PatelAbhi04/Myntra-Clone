@@ -6,7 +6,6 @@ body{
   box-sizing: border-box;
 }
 header{
- 
   top: 0;
 }
 .header{
@@ -16,7 +15,6 @@ header{
   grid-template-columns: auto auto auto auto;
   background-color: white;
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.40);
-  
 }
 .logo{
   width: fit-content;
@@ -25,114 +23,108 @@ header{
 .nav-list{
     display: ruby;
     list-style: none;
-   
-   
-
 }
+
 .navbar{
   margin-top: 40px;
   margin-left: -30px;
-  
 }
+
 .nav-list>li{
   margin: 10px;
 }
 .nav-list>li>a{
   text-decoration: none;
   color: black;
- font-weight: bold;
- font-size: small;
+  font-weight: bold;
+  font-size: small;
 }
 .search{
   margin-top: 25px;
- 
-
 }
+
 .search input{
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
-  
- 
- border: none;
-
-  
+  border: none;
 }
+
 .fa-search:before{
   margin-left: -24px;
   margin-top: 12px;
 }
+
 .search button{
   box-sizing: border-box;
   float: left;
   padding: 15.9px 16px;
   margin-top: 8px;
-  
   background: #fff;
   font-size: 17px;
-  
   cursor: pointer;
- 
   border: none;
- 
-  
 }
 
 .search button:hover{
   background-color: #0b7dda;
 }
+
 .profile{
   display: grid;
   grid-template-columns: auto auto auto ;
 }
+
 .profile i:hover{
   color: #0b7dda;
 }
+
 .home{
   margin-top: 40px;
   display: grid;
   grid-template-columns: auto auto auto;
-  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.40);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.40);
   height: 465px ;
-  
 }
+
 .home img{
   grid-column-start: 1;
   grid-column-end: 3;
   width: 100%;
   height: 465px;
-  
 }
+
 .sidetext h1{
   font-size: 50px;
-  margin:40px
-  
+  margin:40px;
 }
+
 .sidetext h2{
-  margin:40px
+  margin:40px;
 }
+
 .sidetext hr{
-  margin-left:40px
+  margin-left:40px;
 }
+
 .sidetext span{
   margin: 40px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: 1px dashed black;
   padding: 5px;
-  
-  
 }
+
 .globalbrands{
   margin-top: 50px;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
 }
+
 .card{
   box-shadow: 0 3px 2px rgba(0,0,0,0.1), 0 1px 0px rgba(0,0,0,0.2);
   border-radius: 5px;
   position: relative;
 }
-
 
 .card p{
   text-align: center;
@@ -142,31 +134,30 @@ header{
 .card img:hover{
   opacity: 70%;
 }
+
 .other img:hover{
   opacity:70%;
 }
+
 .otherbrands{
   margin-top: 50px;
   display: grid;
   grid-template-columns: auto auto auto auto auto ;
-  
 }
+
 .other{
- 
   grid-column-start: 1;
   grid-column-end: 4;
- 
 }
+
 .absolute{
-  position:absolute;
- bottom:0px;
-
- background-color: aliceblue;
- opacity: 80%;
- width: 100%;
- border-top: 2px solid skyblue;
- border-radius: 2px 5px 5px 5px;
-
+  position: absolute;
+  bottom: 0px;
+  background-color: aliceblue;
+  opacity: 80%;
+  width: 100%;
+  border-top: 2px solid skyblue;
+  border-radius: 2px 5px 5px 5px;
 }
 
 .footer{
@@ -179,40 +170,249 @@ header{
 .footer ul li{
   list-style: none;
 }
+
 .list2{
   margin-left: 10%;
-  
 }
+
 .list3{
   margin-left: 10%;
   width: 50%;
-
 }
+
 .list3 i{
   margin: 5px;
-
 }
+
 .fa-facebook:hover{
-  color: #0b7dda
-
+  color: #0b7dda;
 }
+
 .fa-square-x-twitter:hover{
   color: #0b7dda;
 }
+
 .fa-youtube:hover{
-  color:red
+  color: red;
 }
 
 .fa-instagram:hover{
-   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
-          
-          background-clip: text;
-  -webkit-text-fill-color: transparent;;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* General Styles */
 
+/* Responsive Design for Various Dimensions */
 
+/* General Mobile View (up to 768px) */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+  }
 
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
 
+  .navbar {
+    margin: 10px 0;
+    text-align: center;
+  }
 
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-list > li {
+    margin: 5px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search input {
+    width: 80%;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .profile i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .home img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidetext {
+    margin: 20px;
+  }
+
+  .sidetext h1 {
+    font-size: 30px;
+  }
+
+  .sidetext h2 {
+    font-size: 20px;
+  }
+
+  .globalbrands {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .list1, .list2, .list3, .list4 {
+    margin: 10px 0;
+  }
+
+  .list3 img {
+    width: 60%;
+  }
+}
+
+/* Tablet View (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .search {
+    justify-content: flex-end;
+  }
+
+  .profile {
+    justify-content: flex-end;
+  }
+
+  .profile i {
+    font-size: 26px;
+    margin: 0 15px;
+  }
+
+  .sidetext h1 {
+    font-size: 36px;
+  }
+
+  .sidetext h2 {
+    font-size: 24px;
+  }
+
+  .globalbrands {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .otherbrands {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .list3 img {
+    width: 40%;
+  }
+}
+
+/* Large Screen/Desktop View (1024px and above) */
+@media (min-width: 1025px) {
+  .header {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .search input {
+    width: 300px;
+  }
+
+  .profile i {
+    font-size: 30px;
+    margin: 0 20px;
+  }
+
+  .sidetext h1 {
+    font-size: 50px;
+  }
+
+  .sidetext h2 {
+    font-size: 28px;
+  }
+
+  .globalbrands {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  .otherbrands {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer {
+    justify-content: space-around;
+  }
+
+  .list3 img {
+    width: 30%;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .globalbrands {
+    grid-template-columns: 1fr; /* Display only one card per row */
+  }
+
+  .card {
+    margin: 0 auto; /* Center the card */
+    width: 100%; /* Make the card take up the full width of the screen */
+  }
+
+  .card img {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}
